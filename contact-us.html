@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelSight | About Us</title>
+    <title>TravelSight | Contact Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link href="./travel_recommendation.css" rel="stylesheet">
 </head>
-<body class="background-banner about-us">
+<body class="background-banner contact-us">
     <div class="navbar fixed-top navbar-expand-lg bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">TravelSight</a>
@@ -31,42 +31,31 @@
         </div> 
     </div>
     
-    <div class="container mt-5">
+    <div class="container pt-5">
         <div class="row pt-5">
             <div class="col col-lg-10 mx-auto">
-                <h1 class="text-uppercase mb-3">About Us</h1>
-                <p class="mb-4">We are team of travel enthusiasts providing services to make is easy for individuals like us to find travel destinations around the world with best options possible.</p>
-            </div>    
-        </div>
-
-        <div class="row pt-5">
-            <div class="col col-lg-10 mx-auto">
-                <h1 class="text-uppercase mb-3">Our Team</h1>
+                <h1 class="text-uppercase mb-3 mt-4">Contact Us</h1>
             </div>    
         </div>
 
         <div class="row">
-            <div class="col-lg-10 mx-auto bg-trans rounded-col">
-                <div class="row">
-                    <div class="col-12 col-md-4 pb-4">
-                        <div><img src="" /></div>
-                        <h5><b>John Doe</b></h5>
-                        <div><i>CEO</i></div>
-                        <button class="btn btn-sm btn-info mt-2">Read More</button>
+            <div class="col-lg-10 py-4 mx-auto bg-trans rounded-col">
+                <form method="post">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="contactName">
+                        <label for="contactName" class="form-label">Name</label>
                     </div>
-                    <div class="col-12 col-md-4 pb-4">
-                        <div><img src="" /></div>
-                        <h5><b>Timm Lee</b></h5>
-                        <div><i>CFO</i></div>
-                        <button class="btn btn-sm btn-info mt-2">Read More</button>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="contactEmail">
+                        <label for="contactEmail" class="form-label">Email address</label>
                     </div>
-                    <div class="col-12 col-md-4 pb-4">
-                        <div><img src="" /></div>
-                        <h5><b>Yakiyama Hayabashi</b></h5>
-                        <div><i>Director</i></div>
-                        <button class="btn btn-sm btn-info mt-2">Read More</button>
+                    <div class=" form-floating mb-3">
+                        <textarea class="form-control" id="contactMessage"></textarea>
+                        <label for="contactMessage" class="form-label">Message</label>
                     </div>
-                </div>
+                    
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </form>        
             </div>            
         </div>
 

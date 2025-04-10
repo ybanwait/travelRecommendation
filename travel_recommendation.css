@@ -15,6 +15,11 @@ h1,h2,h3 {
     color:#fff!important;
 }
 
+.navbar.bg-dark {
+    --bs-bg-opacity: 0.8;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .background-banner {
     margin: 0;
     padding: 0;
@@ -26,16 +31,30 @@ h1,h2,h3 {
     background-attachment: fixed; /* makes it static */
 }
 
-.bg-trans {
+.bg-trans-grad {
     background: linear-gradient(to left, rgba(0,0,0, 0.6) 0%, rgba(255,255,255, 0) 100%);
     height: 100vh;
     max-height: 100vh;
 }
 
-.content-wrap-abs {
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    top:0;
+.bg-trans {
+    background-color:rgba(0,0,0, 0.4);
+}
+
+.rounded-col {
+    border-radius:5px;
+}
+
+.contact-us .form-control {
+  --bs-body-bg-opacity:0.5;  
+  background:var(--bs-body-bg-rgb, --bs-body-bg-opacity);    
+  caret-color: #fff;  
+}
+
+.contact-us .form-control, .contact-us .form-floating label{
+    color:#fff;
+}
+
+.form-floating>textarea:focus~label::after, .form-floating>textarea:not(:placeholder-shown)~label::after {
+    content:none;
 }
