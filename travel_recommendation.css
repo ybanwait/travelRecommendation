@@ -58,3 +58,9 @@ h1,h2,h3 {
 .form-floating>textarea:focus~label::after, .form-floating>textarea:not(:placeholder-shown)~label::after {
     content:none;
 }
+
+@media screen and (max-width:600px) {
+    .bg-trans-grad {
+        background-color: rgba(0,0,0, 0.6);   
+    }
+}    
