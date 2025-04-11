@@ -59,6 +59,31 @@ h1,h2,h3 {
     content:none;
 }
 
+.search-list{
+    right: 15px;
+    top: 57px;
+    background-color: #fff;
+    width: 370px;
+    padding: 15px 10px;
+    border-radius: 0px 0px 5px 5px;
+    color: #111;
+}
+
+.search-image {
+    max-width:100px;
+    vertical-align:top;
+}
+
+.search-desc {
+    max-width:235px;
+    margin-left:5px
+}
+
+.dest-list li:last-child hr {
+    border-top:0px;
+}
+
+
 @media screen and (max-width:600px) {
     .bg-trans-grad {
         background-color: rgba(0,0,0, 0.6);   
