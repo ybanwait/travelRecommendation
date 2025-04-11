@@ -28,7 +28,7 @@ function showRecommendation(event){
 }    
 
 document.getElementById("dest_search").addEventListener('input', showRecommendation);
-document.getElementById("dest_search").addEventListener('onreset', clearElements);
+document.getElementById("search_form").addEventListener('reset', clearElements);
 
 function showResults(data){
     let key=Object.keys(data);
