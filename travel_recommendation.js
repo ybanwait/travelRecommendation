@@ -36,19 +36,23 @@ function showResults(data){
         list=[];
         result=[]
         if(key=='countries'){
-            data[key] = data[key].map((info) =>{
+            cities=[]
+            data[key].map((info) =>{
                 //we return cities from a random country
-                return info[info.length * Math.random() << 0]['cities'];
+                info.forEach((city) => {
+                    cities.push(city["cities"]);  
+                });
             });
+            data[key] = cities
         }
-        console.log(data)
+                
         data[key].forEach((dest) => {
             dest.forEach((dest2) =>{
                 //if there is data available to be shown
                 if(dest2.name.length > 0){
                     list.push(`<li>
-                        <div class="d-inline-block search-image"><img src="static/destinations/${dest2.imageUrl}" class="w-100"></div>
-                        <div class="d-inline-block search-desc">
+                        <div class="search-image mb-1 w-100"><img src="static/destinations/${dest2.imageUrl}" class="w-100"></div>
+                        <div class="search-desc">
                             <h5>${dest2.name}</h5>
                             <p>${dest2.description}</p>
                         </div>

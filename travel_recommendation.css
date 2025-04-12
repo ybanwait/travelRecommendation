@@ -73,16 +73,12 @@ input[type="search"]::-webkit-search-decoration {
     padding: 15px 10px;
     border-radius: 0px 0px 5px 5px;
     color: #111;
+    overflow: auto;
+    height: 90vh;
 }
 
 .search-image {
-    max-width:100px;
     vertical-align:top;
-}
-
-.search-desc {
-    max-width:235px;
-    margin-left:5px
 }
 
 .dest-list li:last-child hr {
