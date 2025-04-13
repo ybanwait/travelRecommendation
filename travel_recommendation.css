@@ -74,7 +74,8 @@ input[type="search"]::-webkit-search-decoration {
     border-radius: 0px 0px 5px 5px;
     color: #111;
     overflow: auto;
-    height: 90vh;
+    min-height:350px;
+    max-height: 90vh;
 }
 
 .search-image {
