@@ -65,7 +65,7 @@ function showResults(data){
             })
         });
           
-        parent = document.getElementById("navbarSupportedContent");       
+        parent = document.getElementById("search_form");       
         listDiv = document.createElement("div");
         listDiv.setAttribute("class", "position-absolute right-0 search-list");
         listDiv.setAttribute("id", "destlistwrap");
