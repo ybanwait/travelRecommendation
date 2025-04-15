@@ -8,4 +8,4 @@ This project is to show the search feature implemented using modern Javascript. 
 5. Beaches 
 
 # Link to the website
-https://ybanwait.github.io/travelRecommendation/travel_recommendation.html
+https://ybanwait.github.io/travelRecommendation/
