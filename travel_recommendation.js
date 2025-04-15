@@ -10,7 +10,7 @@ function showRecommendation(event){
             .then(response => response.json())
             .then(data => {
                 Object.keys(data).forEach(function(key) {
-                    if(key.includes(keyword)){
+                    if(key.toLowerCase().includes(keyword.toLowerCase())){
                         if(result[key] == undefined){
                             result[key]=[]
                             result[key].push(data[key])
